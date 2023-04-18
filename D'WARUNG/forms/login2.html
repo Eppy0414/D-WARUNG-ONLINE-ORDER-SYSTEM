@@ -1,0 +1,50 @@
+const loginForm = document.querySelector('form');
+const registerForm = document.querySelector('form');
+
+// Login form submission handler
+loginForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Validate username and password
+  const username = loginForm.elements.username.value.trim();
+  const password = loginForm.elements.password.value.trim();
+  
+  if (username === '') {
+    alert('Please enter a username.');
+    return;
+  }
+  
+  if (password === '') {
+    alert('Please enter a password.');
+    return;
+  }
+  
+  // TODO: Implement login logic here
+});
+
+// Register form submission handler
+registerForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Validate username, email, and password
+  const username = registerForm.elements.username.value.trim();
+  const email = registerForm.elements.email.value.trim();
+  const password = registerForm.elements.password.value.trim();
+  
+  if (username === '') {
+    alert('Please enter a username.');
+    return;
+  }
+  
+  if (email === '') {
+    alert('Please enter an email address.');
+    return;
+  }
+  
+  if (password === '') {
+    alert('Please enter a password.');
+    return;
+  }
+  
+  // TODO: Implement registration logic here
+});
